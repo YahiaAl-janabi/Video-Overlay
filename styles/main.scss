@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
+  header {
+    .videoContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -3;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      color: #fff;
+      font-size: 48px;
+      letter-spacing: 0.2rem;
+    }
+    .switchBtn {
+      position: relative;
+      top: 800px;
+      left: 200px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 16px;
+      padding: 10px;
+      width: 200px;
+      border-radius: 4px;
+      border: none;
+      color: rgb(44, 152, 214);
+
+      .switch {
+        // remember to set the parent elements position to relative if i want this elements position to be relative to it's parent element!!
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100px;
+        height: 39px;
+        background-color: rgb(44, 152, 214);
+        border-radius: 4px;
+
+        transition: all 0.2s;
+      }
+      .slide {
+        left: 50%;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -2;
+    }
+  }
+}
