@@ -4,6 +4,24 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 
+  .preloader {
+    img {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      height: 250px;
+      margin-top: -125px;
+      margin-left: -150px;
+      visibility: visible;
+    }
+  }
+
+  .hidePreloader {
+    visibility: hidden;
+    z-index: -999;
+  }
+
   header {
     .videoContainer {
       position: absolute;
